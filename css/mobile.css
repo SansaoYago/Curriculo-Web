@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 668px) {
+
+    div#corpo p {
+        line-height: 1.3rem;
+    }
+
+   header {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    header > article > p {
+        font-size: 14px;
+    }
+
+    #informações {
+        flex-direction: column;
+    }
+
+    #informações aside {
+        order: 1;
+    }
+
+    #informações aside ol {
+        padding: 5px;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    footer nav {
+        flex-flow: column;
+    }
+
+    #contact {
+        order: -2;
+    }
+
+    #social {
+        padding-top: 15px;
+    }
+
+}

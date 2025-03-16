@@ -1,0 +1,255 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Iansui&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+
+    font: normal 500 1em 'arial';
+}
+
+:root {
+    --font-nome: 'Iansui';
+    --font-skills: 'Open Sans';
+}
+
+/* área de configurações pontuais */
+
+#nome {
+    font: normal 600 25px var(--font-nome);
+    color: rgba(255, 255, 255, 0.918);
+    letter-spacing: 1.7px;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    text-transform: uppercase;
+}
+
+#legenda {
+    font: italic 400 0.8rem var(--font-nome);
+    color: rgba(255, 255, 255, 0.76);
+}
+
+#informações {
+    display: flex;
+}
+
+#social {
+    order: -1;
+    flex-basis: 25%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#social a {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    box-shadow: inset 0px 0px 2px 7px #434345c6;
+}
+
+#contact {
+    background-color: rgba(255, 255, 255, 0.249);
+    padding: 10px 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 75%;
+    padding-left: 25px;
+    border-radius: 35px 0px 0px 35px;
+}
+
+#contact h2 {
+
+    color: rgba(255, 255, 255, 0.767);
+    font-family: var(--font-skills);
+}
+
+
+#contact h2::before {
+    content: url('../img/icons/social/ico-email.png'); 
+}
+
+#w-app {
+    background-color: #4bdc5c;
+    content: url('../img/icons/social/w-appx32.png');
+}
+
+#w-app:hover {
+    transition: 650ms;
+    background-color: #4bdc5c;
+    box-sizing: 0px 0px 1px 1px white;
+    box-shadow: 0px 0px 1px 1px rgba(255, 255, 255, 0.64)
+}
+
+#lkdin {
+    background-color: #1368BF;
+    content: url('../img/icons/social/linkedin-x32.png');
+}
+
+#lkdin:hover {
+    transition: 650ms;
+    background-color: #1368BF;
+    box-shadow: 0px 0px 1px 1px rgba(255, 255, 255, 0.64)
+}
+
+#git {
+    background-color: #9708FF;
+    content: url('../img/icons/social/github-x32.png');
+}
+
+#git:hover {
+    transition: 650ms;
+    background-color: #9708FF;
+    box-shadow: 0px 0px 1px 1px rgba(255, 255, 255, 0.64);
+}
+
+#Email {
+    font: normal 600 20px 'arial';
+    color: rgba(255, 255, 255, 0.722);
+    text-shadow: 1px 1px 11px black;
+}
+
+.form-acad a {
+    text-decoration: none;
+    font: italic 400 17px var(--font-skills);
+    color: black;
+    background-color: rgba(0, 0, 0, 0.193);
+    color: rgb(238, 236, 233);
+    border-radius: 8px;
+    padding: 0px 7px;
+}
+
+.form-acad a::after {
+    content: url('../img/icons/link.png');
+}
+
+.form-acad a:hover {
+    transition: 350ms;
+    color: rgb(255, 255, 255);
+    transform: translate(3px, 4px);
+}
+
+/* Fim da área de configurações pontuais */
+
+
+div#corpo {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+header {
+    background-color: #434345;
+    padding: 20px;
+}
+
+header > img {
+    float: left;
+    box-shadow: 0px 0px 7px 2px rgba(255, 255, 255, 0.305);
+}
+
+header > article {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+header > article > h1, h2 {
+    width: 100%;
+}
+
+header > article > h2 {
+    text-indent: 15px;
+    color: wheat;
+    padding: 5px;
+}
+
+header > article > p {
+    color: rgba(245, 222, 179, 0.436);
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+    text-align: justify;
+    line-height: 1em;
+    padding: 10px;
+    flex-basis: 900px;
+}
+
+header > article > h3 {
+    padding: 8px 2px;
+    border-bottom-style: inset;
+    width: 80%;
+}
+
+main > section > aside {
+    flex-basis: 20%;
+    background-color: #434345;
+    padding: 5px;
+}
+
+main > section > aside > ol {
+    list-style: none;
+}
+
+main > section > aside > ol > li {
+    font-family: var(--font-skills);
+    font-size: 15px;
+    color: rgba(245, 222, 179, 0.878);
+    text-indent: 7px;
+    padding: 6px 3px;
+}
+
+main > section > aside > ol > h3 {
+    text-align: right;
+    color: white;
+}
+
+main > section > article {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(147, 147, 147, 0.148);
+    color: rgba(0, 0, 0, 0.644);
+}
+
+main > section > article > section > h2 {
+    text-align: center;
+    font: normal 500 1rem var(--font-skills);
+    background-image: linear-gradient(to right, transparent, #ac9f66c2, transparent);
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.651);
+    text-transform: uppercase;
+}
+
+main > section > article > section > h3 {
+    padding: 8px;
+    font-family: var(--font-skills);
+}
+
+main > section > article > section > p {
+    padding: 20px;
+    text-align: justify;
+}
+
+footer {
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #434345;
+}
+
+footer > h3 {
+    color: rgba(255, 255, 255, 0.782);
+    padding: 20px;
+    text-align: center;
+}
+
+footer > nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
