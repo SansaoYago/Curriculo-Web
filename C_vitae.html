@@ -9,21 +9,58 @@
             padding: 0;
             margin: auto;
         }
+
         body {
             background-color: rgb(174, 174, 174);
         }
+
         .contain {
             max-width: 900px;
             background-color: white;
         }
+
         h1 {
             text-align: center;
             padding: 4px;
         }
 
+        h2 {
+            border-bottom: 1px solid black;
+            text-indent: 7px;
+            margin: 7px 0px;
+        }
+
+        ul {
+            list-style-position: inside;
+            list-style-type: circle;
+            text-indent: 7px;
+        }
+
+        .info {
+            background-color: aquamarine,;
+        }
+
         @media screen and (max-width: 778px) {
             h1 {
-                font-size: 2em;
+                font-size: 1.9em;
+            }
+
+            .info {
+
+            }
+        }
+
+        @media screen and (min-width: 778px) {
+            .info {
+                display: flex;
+                flex-flow: row wrap;
+                max-width: 600px;
+            }
+            .info p {
+                padding: 2px 5px;
+            }
+            h1 {
+                font-size: 2.5em;
             }
         }
     </style>
@@ -32,16 +69,18 @@
     <div class="contain">
         <header id="cabecalho">
             <h1 class="nome">Cristian Sansão Yago Bezzerra</h1>
-            <p>Brasileiro<br>Solteiro<br>33 Anos</p>
-            <p>
-                Endereço: Rua Cangerana, 174, Vila Veloso, 06332-420 <br>
-                Carapicuíba/SP
-            </p>
-            <p>
-                Contato: (11)96673-5579
-                <br>
-                Email: cristian.syb@gmail.com
-            </p>
+            <div class="info">
+                <p>Brasileiro<br>Solteiro<br>33 Anos</p>
+                <p>
+                    Endereço: Rua Cangerana, 174, Vila Veloso, 06332-420 <br>
+                    Carapicuíba/SP
+                </p>
+                <p>
+                    Contato: (11)96673-5579
+                    <br>
+                    Email: cristian.syb@gmail.com
+                </p>
+            </div>
         </header>
         <main id="corpo">
             <h2>Objetivo</h2>
