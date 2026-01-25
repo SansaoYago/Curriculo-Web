@@ -2,44 +2,49 @@
 
 
 
-    div#corpo p {
-        line-height: 1.3rem;
-    }
+div#corpo p {
+    line-height: 1.3rem;
+}
 
-   header {
-        display: flex;
-        flex-flow: column;
-        align-items: center;
-    }
+header {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
 
-    header > article > p {
-        font-size: 14px;
-    }
+header>article>p {
+    font-size: 14px;
+}
 
-    #informações {
-        flex-direction: column;
-    }
+#informações {
+    flex-direction: column;
+}
 
-    #informações aside {
-        order: 1;
-    }
+#informações aside {
+    order: 1;
+}
 
-    #informações aside ol {
-        padding: 5px;
-        display: flex;
-        flex-flow: column nowrap;
-        align-items: center;
-    }
+#informações aside ol {
+    padding: 5px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
 
-    footer nav {
-        flex-flow: column;
-    }
+main > section > aside > ol > h3 {
+    width: 50%;
+    border-color: rgba(255, 255, 255, 0.079);
+    text-align: center;
+}
 
-    #contact {
-        order: -2;
-    }
+footer nav {
+    flex-flow: column;
+}
 
-    #social {
-        padding-top: 15px;
-    }
+#contact {
+    order: -2;
+}
 
+#social {
+    padding-top: 15px;
+}

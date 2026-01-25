@@ -207,38 +207,41 @@ footer > nav {
     content: url('../img/icons/social/ico-email.png'); 
 }
 
+#w-app, #lkdin, #git {
+    transition: 250ms;
+}
+
 #w-app {
-    background-color: #4bdc5c;
+    background-color: #4bdc5c7c;
     content: url('../img/icons/social/w-appx32.png');
 }
 
 #w-app:hover {
-    transition: 650ms;
     background-color: #4bdc5c;
-    box-sizing: 0px 0px 1px 1px white;
-    box-shadow: 0px 0px 1px 1px rgba(255, 255, 255, 0.64)
+    box-shadow: 0px 0px 1px 1px rgba(255, 255, 255, 0.64);
+    transform: scale(1.2);
 }
 
 #lkdin {
-    background-color: #1368BF;
+    background-color: #1369bf7d;
     content: url('../img/icons/social/linkedin-x32.png');
 }
 
 #lkdin:hover {
-    transition: 650ms;
     background-color: #1368BF;
-    box-shadow: 0px 0px 1px 1px rgba(255, 255, 255, 0.64)
+    box-shadow: 0px 0px 1px 1px rgba(255, 255, 255, 0.64);
+    transform: scale(1.2);
 }
 
 #git {
-    background-color: #9708FF;
+    background-color: #9808ff6c;
     content: url('../img/icons/social/github-x32.png');
 }
 
 #git:hover {
-    transition: 650ms;
     background-color: #9708FF;
     box-shadow: 0px 0px 1px 1px rgba(255, 255, 255, 0.64);
+    transform: scale(1.2);
 }
 
 #Email {
@@ -250,11 +253,11 @@ footer > nav {
 .form-acad a {
     text-decoration: none;
     font: italic 400 17px var(--font-skills);
-    color: black;
-    background-color: rgba(0, 0, 0, 0.193);
-    color: rgb(238, 236, 233);
+    color: rgb(37, 36, 109);
+    background-color: rgba(0, 0, 0, 0.311);
     border-radius: 8px;
     padding: 0px 7px;
+    transition: 350ms;
 }
 
 .form-acad a::after {
@@ -262,7 +265,7 @@ footer > nav {
 }
 
 .form-acad a:hover {
-    transition: 350ms;
     color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.364);
     transform: translate(3px, 4px);
 }
