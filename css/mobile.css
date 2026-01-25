@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media screen and (max-width: 668px) {
+
 
     div#corpo p {
         line-height: 1.3rem;
@@ -43,4 +43,3 @@
         padding-top: 15px;
     }
 
-}
